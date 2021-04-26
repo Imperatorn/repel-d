@@ -6,11 +6,11 @@ int main()
 	string lastOutput;
 
 	system("cls");
-
 	writeln("Welcome to repel-d!\n");
 
-	writeln(
-			"Type and expression and press enter to evaluate, cls to clear. Examples: 2+2 or \"Testing\"\n");
+	writeln("Type and expression and press enter to evaluate, cls to clear");
+	writeln("Examples: 2+2 or \"Testing\"");
+	writeln("For network functionality, type network.get etc (std.net.curl). Example network.get(\"dlang.org\")\n");
 
 	writeln("Use 'f ' as prefix to use writefln, like: f \"%d is %b in binary\", 23, 23");
 	writeln("Use 'e ' as prefix to execute a shell command, like: e dir");
