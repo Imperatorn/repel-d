@@ -53,9 +53,9 @@ int main()
 
 		if (sw != "e ")
 		{
-			if (r.indexOf("get(") != -1)
+			if (r.indexOf("network.") != -1)
 			{
-				r = "import std.net.curl; " ~ r;
+				r = "import std.net.curl; " ~ r.replace("network.", "");
 			}
 
 			cmd = "rdmd --eval=\"" ~ r.replace("#", lastOutput).replace("\"",
