@@ -55,8 +55,8 @@ int main()
 
 		if (sw != "e ")
 		{
-			cmd = "rdmd --eval=\"" ~ r.replace("#", lastOutput).replace("\"",
-					"`").replace("``", "`").strip ~ "\"";
+			cmd = "rdmd --eval=\"" ~ r.replace("#", lastOutput)
+				.replace("\"", "`").replace("``", "`").strip ~ "\"";
 		}
 
 		string output = executeShell(cmd).output.chomp.strip;
