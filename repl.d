@@ -25,7 +25,6 @@ int main()
 		if (r == "cls")
 		{
 			system("cls");
-
 			continue;
 		}
 
@@ -53,9 +52,9 @@ int main()
 
 		if (sw != "e ")
 		{
-			if (r.indexOf("network.") != -1)
+			if (r.indexOf("net.") != -1)
 			{
-				r = "import std.net.curl; " ~ r.replace("network.", "");
+				r = "import std.net.curl; " ~ r.replace("net.", "");
 			}
 
 			cmd = "rdmd --eval=\"" ~ r.replace("#", lastOutput).replace("\"",
